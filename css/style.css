@@ -1,0 +1,422 @@
+/* generic =================================================== */
+
+body{
+  font-family: "proxima nova", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+}
+
+h1,
+.h1,
+h2,
+.h2 {
+  margin: 0;
+  color: #111111;
+  text-rendering: optimizelegibility;
+  font-weight: normal;
+}
+
+h1,
+.h1 {
+  margin-bottom: 0.1em;
+  font-size: 70px;
+  line-height: 1.2em;
+  font-family: "neosans regular", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+  letter-spacing: -0.07em;
+}
+
+h3,
+.h3 {
+  padding-top: 1em;
+  margin-bottom: 0.4em;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-family: "proxima nova", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+}
+
+p {
+  margin-bottom: 1.4em;
+  line-height: 1.4em;
+}
+
+ul {
+    list-style-type: none;
+    display:inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+    padding: 0 15px;
+}
+
+li a{
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+li a:visited{
+  color: white;
+}
+
+li a:hover{
+  color: #aaaaaa;
+}
+
+li a:active{
+  color: #aaaaaa;
+}
+
+img{
+  max-width: 100%;
+}
+
+/* layout =================================================== */
+
+.container{
+  width: 100%;
+  margin: auto;
+}
+
+header{
+  background-color: black;
+  padding: 0 5%;
+  overflow: hidden;
+}
+
+.header .main-nav{
+  float: left;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.header .main-nav li.active a{
+  color: #aaaaaa;
+}
+
+.header .main-nav .sub-nav{
+  margin: 0 20%;
+  float: left;
+  padding-top: 22px;
+}
+
+.header .social-nav{
+  position: absolute;
+  top: 22px;
+  right: 30px;
+}
+.header ul li.icon {display: none;}
+
+.header .logo{
+  float: left;
+  padding-left: 0;
+}
+
+
+header .grid{
+  padding-left: 0;
+}
+header .col-1-1{
+    position: relative;
+    padding: 0;
+}
+
+section{
+  padding: 0 5%;
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+.face{
+width: 1140px;
+  position: relative;
+}
+
+
+.face [class*='col-']{
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+
+.face .coder,
+.face .designer {
+  position: absolute;
+  width: 270px;
+}
+
+.face .designer{
+  left: 0;
+}
+
+.face .coder{
+  right: 50px;
+}
+
+.face .coder .description, .face .designer .description{
+  position: absolute;
+  top: 180px;
+  width: 270px;
+}
+
+.face a{
+  color: #666666;
+}
+
+.latest-work{
+  background: #fafafa;
+  padding: 80px 0;
+}
+
+.latest-work .grid{
+  overflow: visible;
+}
+
+.latest-work .thumbs h4{
+  text-align: left;
+  font-size: 18px;
+}
+
+.latest-work .thumbs p{
+  text-align: left;
+  font-size: 16px;
+  margin-bottom: 0;
+  color: #666666;
+}
+
+.latest-work .thumbs .portfolio-thumbs{
+  background-color: white;
+  padding: 8px;
+  border-radius: 3px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.latest-work .thumbs .portfolio-thumbs .caption{
+  padding:8px;
+  display:block;
+}
+
+.latest-work .thumbs .portfolio-thumbs a{
+  text-decoration: none;
+  display: block;
+  position: relative;
+  color: #333333;
+}
+
+.latest-work .header-center{
+  height: 1px;
+  background: #DDD;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.latest-work .header-center h3{
+  background: #fafafa;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  margin-left: -150px;
+  width: 300px;
+  text-align: center;
+  display: block;
+  color: #666666;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 0;
+}
+
+footer{
+  background-color: #e2e2e2;
+  padding: 0 5%;
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+  padding: 30px 0;
+}
+
+footer [class*='col-']{
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+footer .footer-nav{
+  float:left;
+}
+
+footer .copywright{
+  float: left;
+  padding-left: 22%;
+  padding-right:10%;
+  color: #666;
+}
+
+footer li a{
+  font-weight: normal;
+  color: #666;
+  font-size: 16px;
+}
+
+footer li a:visited{
+    color: #666;
+}
+
+
+
+
+@media screen and (max-width:1140px) {
+  .face{
+    width: 100%;
+  }
+  .face .coder{
+    right: 0;
+  }
+
+  .face .coder,
+  .face .designer {
+    position: absolute;
+    width: 30%;
+    display: block;
+    z-index: 10;
+    height: 40%;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+  }
+
+  .face .coder .description, .face .designer .description{
+    position: static;
+    width: 100%;
+  }
+
+  .face .coder .description{
+    text-align: right;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  h1,
+  .h1 {
+    font-size: 58px;
+  }
+  .header .social-nav{
+    display: none;
+  }
+  .header .main-nav .sub-nav{
+    margin: 0 0 0 20%;
+  }
+
+  .face .coder,
+  .face .designer {
+    height: 30%;
+  }
+
+
+}
+
+
+@media screen and (max-width:800px) {
+  h1,
+  .h1 {
+    font-size: 45px;
+  }
+
+  .face .coder{
+    right: 20px;
+  }
+
+  .face .coder p, .face .designer p{
+    display: none;
+  }
+  .header ul li {
+    display: none;
+    padding: 0;
+  }
+  .header ul li.logo {
+    display: inline;
+  }
+  /*.header ul li.logo img {padding-bottom: 10px;}*/
+  .header ul li.icon {
+   float: right;
+   display: inline-block;
+    padding: 15px 0 0 0;
+   }
+
+   .header ul li.icon a{
+     font-size: 30px;
+
+   }
+
+   .header .main-nav .sub-nav{
+     float: none;
+     margin: 0;
+   }
+
+   .header .main-nav .sub-nav li a{
+     padding: 15px 0;
+     border-top: 1px solid grey;
+   }
+
+   [class*='col-']{
+     margin: 0;
+   }
+
+   footer .footer-nav{
+     display:none;
+   }
+   footer .copywright{
+     float: none;
+     padding: 0;
+   }
+   footer .col-1-1 {
+     text-align: center;
+   }
+ }
+@media screen and (max-width:800px) {
+   .header ul.responsive {position: relative;}
+   .header ul.responsive li.icon {
+     position: absolute;
+     right: 0;
+     top: 25px;
+   }
+   .header ul.responsive li.logo img{
+     margin-bottom: 15px;
+   }
+   .header ul.responsive span {
+     float: none;
+     display: inline;
+
+   }
+   .header ul.responsive li {
+     float: none;
+     display: inline;
+     padding: 0;
+   }
+   .header ul.responsive li a {
+     display: block;
+     text-align: left;
+   }
+}
+
+@media screen and (max-width:600px) {
+  h1,
+  .h1 {
+    font-size: 35px;
+  }
+  .face .coder{
+    right: 10px;
+  }
+  .latest-work .thumbs h4{
+    text-align: center;
+  }
+  .latest-work .thumbs p{
+    display:none;
+  }
+}
+
+@media screen and (max-width:468px) {
+  h1,
+  .h1 {
+    font-size: 30px;
+  }
+}
