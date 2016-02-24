@@ -34,7 +34,7 @@ function searchCallback(data) {
 
 
 			}).success(function(response){
-				console.log(response.reviews);
+				//console.log(response.reviews);
 				var freshness=0, rotten=0, total=0;
 				response.reviews.forEach(function(review) {
 
@@ -47,9 +47,9 @@ function searchCallback(data) {
 		          }
 
 		    });
-				console.log("freshness: "+freshness+" rotten: "+rotten);
+				//console.log("freshness: "+freshness+" rotten: "+rotten);
 				total = freshness + rotten;
-				console.log("Number of reviews: "+total);
+				//console.log("Number of reviews: "+total);
 				$("#freshness" + index).html("Fresh: "+freshness);
 				$("#rotten" + index).html("Rotten: "+rotten);
 				$("#total" + index).html("Total: "+total);
@@ -78,7 +78,7 @@ function searchCallback(data) {
 function findQualityImage(image1){
 
 	var rawImgUrl = image1;
-	console.log(rawImgUrl);
+	//console.log(rawImgUrl);
 	if(rawImgUrl.indexOf("movie") > -1) {
 			var splitUrl = rawImgUrl.split( '/' );
 		 	var endUrl = splitUrl[7] + "/" + splitUrl[8] + "/" + splitUrl[9] + "/" + splitUrl[10];
