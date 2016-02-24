@@ -1,4 +1,4 @@
-var apikey = "sf8nr5cth5fgm3vdbf6fvtwa";
+var apikey = "y28r7zxq24wdae6bwjndv6k2";
 var baseUrl = "http://api.rottentomatoes.com/api/public/v1.0";
 var movieID = movieID;
 
