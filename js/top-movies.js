@@ -48,11 +48,11 @@ function searchCallback(data) {
 
 		    });
 				//console.log("freshness: "+freshness+" rotten: "+rotten);
-				total = freshness + rotten;
+				//total = freshness + rotten;
 				//console.log("Number of reviews: "+total);
 				$("#freshness" + index).html(freshness);
 				$("#rotten" + index).html(rotten);
-				$("#total" + index).html(total);
+				$("#total" + index).html(freshness + rotten);
 				//callback(freshness);
 			});
 			var title = movie.title;
@@ -62,9 +62,12 @@ function searchCallback(data) {
 			findQualityImage(image);
 			//console.log(image);
 			//console.log(data);
-			$("#title" + index).html(title);
 			$("#rating" + index).html(rating);
+			$("#title" + index).html(title);
 			$("#image" + index).html('<img class="movie-poster" src="' + newImageUrl + '">');
+
+
+
 			//$("#freshness" + index).html(freshness);
 			//console.log(freshness);
 
@@ -95,7 +98,7 @@ function findQualityImage(image1){
 $(document).ready(function() {
   // send off the query
   $.ajax({
-		url: moviesSearchUrl + "&limit=6",
+		url: moviesSearchUrl + "&limit=5",
     dataType: "jsonp",
     success: searchCallback
   });
