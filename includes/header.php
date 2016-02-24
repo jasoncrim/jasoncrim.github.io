@@ -13,7 +13,7 @@
 
 
 
-  <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <script src="http://code.jquery.com/jquery-2.0.0.js"></script>
   <script src="js/jquery.bxslider.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/main.js"></script>
 
