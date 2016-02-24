@@ -100,7 +100,4 @@ $(document).ready(function() {
     success: searchCallback
   });
 
-	console.log("what?");
-
-
 });
