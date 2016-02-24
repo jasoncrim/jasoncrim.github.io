@@ -24,9 +24,9 @@ function searchCallback(data) {
 
 		movies.forEach(function(movie, index) {
 
-			moviesRatingsUrl = baseUrl + '/movies/' + movie.id+ '/reviews.json?apikey=' + apikey + '&page_limit=40';
-
+			//moviesRatingsUrl = baseUrl + '/movies/' + movie.id+ '/reviews.json?apikey=' + apikey + '&page_limit=40';
       //console.log(moviesRatingsUrl);
+
 			$.ajax({
 				url: moviesRatingsUrl = baseUrl + '/movies/' + movie.id+ '/reviews.json?apikey=' + apikey + '&page_limit=40',
 				dataType: "jsonp",
@@ -50,13 +50,13 @@ function searchCallback(data) {
 				//console.log("freshness: "+freshness+" rotten: "+rotten);
 				total = freshness + rotten;
 				//console.log("Number of reviews: "+total);
-				$("#freshness" + index).html("Fresh: "+freshness);
-				$("#rotten" + index).html("Rotten: "+rotten);
-				$("#total" + index).html("Total: "+total);
+				$("#freshness" + index).html(freshness);
+				$("#rotten" + index).html(rotten);
+				$("#total" + index).html(total);
 				//callback(freshness);
 			});
 			var title = movie.title;
-			var rating = movie.ratings.audience_score;
+			var rating = movie.ratings.critics_score;
 			var image = movie.posters.original;
 
 			findQualityImage(image);
@@ -64,7 +64,7 @@ function searchCallback(data) {
 			//console.log(data);
 			$("#title" + index).html(title);
 			$("#rating" + index).html(rating);
-			$("#image" + index).html('<img src="' + newImageUrl + '">');
+			$("#image" + index).html('<img class="movie-poster" src="' + newImageUrl + '">');
 			//$("#freshness" + index).html(freshness);
 			//console.log(freshness);
 
@@ -95,7 +95,7 @@ function findQualityImage(image1){
 $(document).ready(function() {
   // send off the query
   $.ajax({
-		url: moviesSearchUrl + "&limit=8",
+		url: moviesSearchUrl + "&limit=6",
     dataType: "jsonp",
     success: searchCallback
   });

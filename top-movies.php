@@ -1,72 +1,141 @@
 <?php include 'includes/header.php';?>
 
 
-    <section class="latest-work top-movies">
+<section class="latest-work top-movies">
 
-      <div class="grid thumbs">
+  <div class="grid thumbs">
 
-        <div class="col-1-3">
-          <div class="portfolio-thumbs">
-            <div class="movie-thumb-bg">
-              <img class="movie-poster" src="images/kungfu-panda.jpg" alt="">
-              <div class="api-data">
-                <h5>TOMATOMETER<i class="fa fa-question-circle"></i></h5>
-                <div class="rotten-row">
-                  <div class="rotten-icon"></div>
-                  <div id="rating01" class="rotten-percent"></div>
-                </div>
-                <!--<p>Average Rating: <span class="average-rating">8/10</span></p>-->
-                <p>Reviews Counted: <span class="Reviews Counted">37</span></p>
-                <p>Fresh: <span id="freshness01" class="Fresh"></span></p>
-                <p>Rotten: <span id="rotten01" class="Rotten"></span></p>
-              </div>
-            </div><!--ends movie thumbs bg-->
-          </div><!--ends portfolio thumbs-->
-        </div><!--ends .col-1-3-->
+    <div class="col-1-3">
+      <div class="portfolio-thumbs">
+        <div class="movie-thumb-bg">
+          <div id="image0">
+            <!--<img class="movie-poster" src="images/kungfu-panda.jpg" alt="">-->
+          </div>
 
-        <div class="col-1-3">
-          <div class="portfolio-thumbs">
-            <div class="movie-thumb-bg">
-              <img class="movie-poster" src="images/kungfu-panda.jpg" alt="">
-              <div class="api-data">
-                <h5>TOMATOMETER<i class="fa fa-question-circle"></i></h5>
-                <div class="rotten-row">
-                  <div class="rotten-icon"></div>
-                  <div id="rating02" class="rotten-percent"></div>
-                </div>
-                <!--<p>Average Rating: <span class="average-rating">8/10</span></p>-->
-                <p>Reviews Counted: <span class="Reviews Counted">37</span></p>
-                <p>Fresh: <span id="freshness02" class="Fresh"></span></p>
-                <p>Rotten: <span id="rotten02" class="Rotten"></span></p>
-              </div>
-            </div><!--ends movie thumbs bg-->
-          </div><!--ends portfolio thumbs-->
-        </div><!--ends .col-1-3-->
-        <div class="col-1-3">
-          <div class="portfolio-thumbs">
-            <div class="movie-thumb-bg">
-              <img class="movie-poster" src="images/kungfu-panda.jpg" alt="">
-              <div class="api-data">
-                <h5>TOMATOMETER<i class="fa fa-question-circle"></i></h5>
-                <div class="rotten-row">
-                  <div class="rotten-icon"></div>
-                  <div id="rating03" class="rotten-percent"></div>
-                </div>
-                <!--<p>Average Rating: <span class="average-rating">8/10</span></p>-->
-                <p>Reviews Counted: <span class="Reviews Counted">37</span></p>
-                <p>Fresh: <span id="freshness03" class="Fresh"></span></p>
-                <p>Rotten: <span id="rotten03" class="Rotten"></span></p>
-              </div>
-            </div><!--ends movie thumbs bg-->
-          </div><!--ends portfolio thumbs-->
-        </div><!--ends .col-1-3-->
+          <div class="api-data">
+            <h5>TOMATOMETER<i class="fa fa-question-circle"></i></h5>
+            <div class="rotten-row">
+              <div class="rotten-icon"></div>
+              <div id="rating0" class="rotten-percent"></div>
+            </div>
+            <!--<p>Average Rating: <span class="average-rating">8/10</span></p>-->
+            <p>Reviews Counted: <span id="total0" class="Reviews Counted"></span></p>
+            <p>Fresh: <span id="freshness0" class="Fresh"></span></p>
+            <p>Rotten: <span id="rotten0" class="Rotten"></span></p>
+          </div>
+        </div><!--ends movie thumbs bg-->
+      </div><!--ends portfolio thumbs-->
+    </div><!--ends .col-1-3-->
+
+    <div class="col-1-3">
+      <div class="portfolio-thumbs">
+        <div class="movie-thumb-bg">
+          <div id="image1">
+            <!--<img class="movie-poster" src="images/kungfu-panda.jpg" alt="">-->
+          </div>
+          <div class="api-data">
+            <h5>TOMATOMETER<i class="fa fa-question-circle"></i></h5>
+            <div class="rotten-row">
+              <div class="rotten-icon"></div>
+              <div id="rating1" class="rotten-percent"></div>
+            </div>
+            <!--<p>Average Rating: <span class="average-rating">8/10</span></p>-->
+            <p>Reviews Counted: <span id="total1" class="Reviews Counted"></span></p>
+            <p>Fresh: <span id="freshness1" class="Fresh"></span></p>
+            <p>Rotten: <span id="rotten1" class="Rotten"></span></p>
+          </div>
+        </div><!--ends movie thumbs bg-->
+      </div><!--ends portfolio thumbs-->
+    </div><!--ends .col-1-3-->
+    <div class="col-1-3">
+      <div class="portfolio-thumbs">
+        <div class="movie-thumb-bg">
+          <div id="image2">
+            <!--<img class="movie-poster" src="images/kungfu-panda.jpg" alt="">-->
+          </div>
+          <div class="api-data">
+            <h5>TOMATOMETER<i class="fa fa-question-circle"></i></h5>
+            <div class="rotten-row">
+              <div class="rotten-icon"></div>
+              <div id="rating2" class="rotten-percent"></div>
+            </div>
+            <!--<p>Average Rating: <span class="average-rating">8/10</span></p>-->
+            <p>Reviews Counted: <span id="total2" class="Reviews Counted"></span></p>
+            <p>Fresh: <span id="freshness2" class="Fresh"></span></p>
+            <p>Rotten: <span id="rotten2" class="Rotten"></span></p>
+          </div>
+        </div><!--ends movie thumbs bg-->
+      </div><!--ends portfolio thumbs-->
+    </div><!--ends .col-1-3-->
+
+    <div class="col-1-3">
+      <div class="portfolio-thumbs">
+        <div class="movie-thumb-bg">
+          <div id="image3">
+            <!--<img class="movie-poster" src="images/kungfu-panda.jpg" alt="">-->
+          </div>
+          <div class="api-data">
+            <h5>TOMATOMETER<i class="fa fa-question-circle"></i></h5>
+            <div class="rotten-row">
+              <div class="rotten-icon"></div>
+              <div id="rating3" class="rotten-percent"></div>
+            </div>
+            <!--<p>Average Rating: <span class="average-rating">8/10</span></p>-->
+            <p>Reviews Counted: <span id="total3" class="Reviews Counted"></span></p>
+            <p>Fresh: <span id="freshness3" class="Fresh"></span></p>
+            <p>Rotten: <span id="rotten3" class="Rotten"></span></p>
+          </div>
+        </div><!--ends movie thumbs bg-->
+      </div><!--ends portfolio thumbs-->
+    </div><!--ends .col-1-3-->
+
+    <div class="col-1-3">
+      <div class="portfolio-thumbs">
+        <div class="movie-thumb-bg">
+          <div id="image4">
+            <!--<img class="movie-poster" src="images/kungfu-panda.jpg" alt="">-->
+          </div>
+          <div class="api-data">
+            <h5>TOMATOMETER<i class="fa fa-question-circle"></i></h5>
+            <div class="rotten-row">
+              <div class="rotten-icon"></div>
+              <div id="rating4" class="rotten-percent"></div>
+            </div>
+            <!--<p>Average Rating: <span class="average-rating">8/10</span></p>-->
+            <p>Reviews Counted: <span id="total4" class="Reviews Counted"></span></p>
+            <p>Fresh: <span id="freshness4" class="Fresh"></span></p>
+            <p>Rotten: <span id="rotten4" class="Rotten"></span></p>
+          </div>
+        </div><!--ends movie thumbs bg-->
+      </div><!--ends portfolio thumbs-->
+    </div><!--ends .col-1-3-->
+
+    <div class="col-1-3">
+      <div class="portfolio-thumbs">
+        <div class="movie-thumb-bg">
+          <div id="image5">
+            <!--<img class="movie-poster" src="images/kungfu-panda.jpg" alt="">-->
+          </div>
+          <div class="api-data">
+            <h5>TOMATOMETER<i class="fa fa-question-circle"></i></h5>
+            <div class="rotten-row">
+              <div class="rotten-icon"></div>
+              <div id="rating5" class="rotten-percent"></div>
+            </div>
+            <!--<p>Average Rating: <span class="average-rating">8/10</span></p>-->
+            <p>Reviews Counted: <span id="total5" class="Reviews Counted"></span></p>
+            <p>Fresh: <span id="freshness5" class="Fresh"></span></p>
+            <p>Rotten: <span id="rotten5" class="Rotten"></span></p>
+          </div>
+        </div><!--ends movie thumbs bg-->
+      </div><!--ends portfolio thumbs-->
+    </div><!--ends .col-1-3-->
 
 
+  </div><!--ends grid-->
 
-      </div><!--ends grid-->
 
-
-    </section><!-- ends latest-work -->
+</section><!-- ends latest-work -->
 
 <script src="js/top-movies.js"></script>
 
