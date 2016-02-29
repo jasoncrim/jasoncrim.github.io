@@ -36,7 +36,7 @@
               <a href="../index.php"><img src="../images/logo-64px.png" alt=""></a>
             </li>
             <span class="sub-nav">
-              <li <?php if($server == "/about.php" || $file == "/about") echo 'class="active"'; ?>>
+              <li <?php if($server == "/about.php") echo 'class="active"'; ?>>
                 <a href="../about.php">about</a>
               </li>
               <li <?php if($server == "/portfolio.php" || $file == "/portfolio") echo 'class="active"'; ?>>
