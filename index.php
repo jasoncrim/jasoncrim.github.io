@@ -1,6 +1,6 @@
 <?php include 'includes/header.php';?>
 <div id="content">
-    <section class="hero">
+    <section id="section" class="hero">
       <div id="face" class="grid face">
 
 

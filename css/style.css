@@ -210,6 +210,12 @@ header .col-1-1{
   opacity: 0;
   right: 0;
 }
+
+#coder,
+#designer{
+  opacity: 0;
+}
+
 /* Homepage Half Face */
 .face {
   width: 100%;
@@ -225,12 +231,12 @@ header .col-1-1{
   padding-bottom: 0;
 }
 
-/*
+
 .face .coder,
 .face .designer {
   position: absolute;
   width: 270px;
-}*/
+}
 
 .face .designer{
   left: 0;
@@ -240,11 +246,7 @@ header .col-1-1{
   right: 50px;
 }
 
-.face .coder .description, .face .designer .description{
-  position: absolute;
-  top: 180px;
-  width: 270px;
-}
+
 
 .face a{
   color: #666666;
@@ -370,6 +372,7 @@ header .col-1-1{
   .face .face-img {
     display: none;
   }
+
 }
 
 /* =Portfolio
@@ -900,10 +903,7 @@ footer li a:visited{
     bottom: 0;
   }
 
-  .face .coder .description, .face .designer .description{
-    position: static;
-    width: 100%;
-  }
+
 
   .face .coder .description{
     text-align: right;

@@ -33,20 +33,20 @@
           </div>-->
 
           <ul class="main-nav">
-            <li class="logo" <?php if($server == "/fewd7-localdev/portfolio-2.1.16/index.php") echo 'class="active"'; ?>>
+            <li class="logo" <?php if($server == "/index.php") echo 'class="active"'; ?>>
               <a href="/fewd7-localdev/portfolio-2.1.16/index.php"><img src="images/logo-64px.png" alt=""></a>
             </li>
             <span class="sub-nav">
-              <li <?php if($server == "/fewd7-localdev/portfolio-2.1.16/about.php" || $file == "/about") echo 'class="active"'; ?>>
-                <a href="/fewd7-localdev/portfolio-2.1.16/about.php">about</a>
+              <li <?php if($server == "/about.php") echo 'class="active"'; ?>>
+                <a href="/about.php">about</a>
               </li>
-              <li <?php if($server == "/fewd7-localdev/portfolio-2.1.16/portfolio.php" || $file == "/portfolio") echo 'class="active"'; ?>>
+              <li <?php if($server == "/portfolio.php" || $file == "/portfolio") echo 'class="active"'; ?>>
                 <a href="/fewd7-localdev/portfolio-2.1.16/portfolio.php">portfolio</a>
               </li>
-              <li <?php if($server == "/fewd7-localdev/portfolio-2.1.16/top-movies.php") echo 'class="active"'; ?>>
+              <li <?php if($server == "/top-movies.php") echo 'class="active"'; ?>>
                 <a href="top-movies.php">top movies</a>
               </li>
-              <li <?php if($server == "/fewd7-localdev/portfolio-2.1.16/contact.php") echo 'class="active"'; ?>>
+              <li <?php if($server == "/contact.php") echo 'class="active"'; ?>>
                 <a href="contact.php">contact</a>
               </li>
             </span>
