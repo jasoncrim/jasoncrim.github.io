@@ -1,1 +1,0 @@
-http://localhost/fewd7-localdev/portfolio-2.1.16/index.php
