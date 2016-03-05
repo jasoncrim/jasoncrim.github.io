@@ -452,6 +452,7 @@ header .col-1-1{
   display: block;
   width: 52%;
   border-right: 7px solid white;
+  max-height: 255px;
 }
 
 .latest-work .movie-thumb-bg .api-data{
