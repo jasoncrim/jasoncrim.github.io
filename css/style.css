@@ -928,6 +928,10 @@ footer li a:visited{
     height: 30%;
   }
 
+.latest-work .movie-thumb-bg .movie-poster{
+  max-height: 216px;
+}
+
   .latest-work .movie-thumb-bg .api-data .rotten-percent{
 
   }
